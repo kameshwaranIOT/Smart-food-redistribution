@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/build",
+  "env": {
+    "REACT_APP_API_URL": "@react_app_api_url"
+  },
+  "functions": {
+    "server/server.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
+}
