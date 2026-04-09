@@ -17,6 +17,7 @@ function Messages({ currentUserId }) {
     if (selectedUserId) {
       fetchConversation();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedUserId]);
 
   const fetchInbox = async () => {

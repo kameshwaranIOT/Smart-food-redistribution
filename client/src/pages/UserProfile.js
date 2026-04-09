@@ -6,11 +6,11 @@ import './UserProfile.css';
 function UserProfile() {
   const { userId } = useParams();
   const [user, setUser] = useState(null);
-  const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchUserProfile();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userId]);
 
   const fetchUserProfile = async () => {

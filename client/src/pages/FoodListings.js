@@ -18,6 +18,7 @@ function FoodListings() {
 
   useEffect(() => {
     applyFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [listings, filters]);
 
   const fetchListings = async () => {
